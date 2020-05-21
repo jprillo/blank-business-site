@@ -1,7 +1,6 @@
 import React from "react"
 import NavBar from "./navbar" 
-import facebook from "../img/facebook.svg"
-import twitter from "../img/twitter.svg"
+
 
 
 

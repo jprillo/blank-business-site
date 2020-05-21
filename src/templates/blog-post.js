@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
           
 <div  className='hero-page'>
  
-      <p className="blog-date">{post.frontmatter.date}</p>
+      
       <h1  className="align-center">{post.frontmatter.title}</h1>     
   
  
@@ -88,7 +88,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        
         description
        
       }

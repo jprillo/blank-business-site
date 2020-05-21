@@ -31,21 +31,29 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article  className="col-5 blog-article" key={node.fields.slug}>
-              <header >
-              <small>{node.frontmatter.date}</small>
+              
+         
                 <h3 >
                   <Link className="secondary-color" style={{padding: "5px"}}  to={node.fields.slug}>
                     {title}
                   </Link>
-                </h3>
-               
-              </header>
+                </h3>            
+            
               <div>
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }}
                 />
+               
+              </div>
+              <div>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.country || node.excerpt,
+                  }}
+                />
+               
               </div>
               <Link  to={node.fields.slug}>
                     Read More
@@ -67,7 +75,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {  order: DESC }) {
       edges {
         node {
           excerpt
@@ -75,9 +83,10 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            
             title
             description
+            country
           }
         }
       }
