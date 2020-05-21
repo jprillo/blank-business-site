@@ -32,21 +32,7 @@ class Layout extends React.Component {
           </header>
         <main className="contain">{children}</main>   
 
-        <section className="secondary-back flex align-center">
-          <div className="col-6 ">
-                    <h5 className="align-center">Formal Flamingo</h5>
-                   <p>A web design agency in Melbourne Florida specializing in helping your business dominate the web.</p> 
-          </div>
-
-          <div className="col-6 social-media">
-            <h5 className="align-center">Follow Us</h5>
-            <div > 
-             <a href="https://twitter.com/flamingodigital"><img alt=" pink and white twitter icon" src={twitter}></img></a>
-             <a href="https://facebook.com/formalflamingo"><img alt="pink and white facebook icon" src={facebook}></img></a>
-            
-            </div>
-            </div>
-          </section>     
+         
         <footer className="secondary-back">
          
 

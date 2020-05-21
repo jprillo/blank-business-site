@@ -14,7 +14,7 @@
               <div id="main-nav-wrap">
                   <div className="logo-wrap">
                       <Link href="/">
-                    <span style={{color: "black", fontWeight: "bold"}}>Formal</span><span className="primary-color">Flamingo</span> </Link>
+                    <span style={{color: "black", fontWeight: "bold"}}>Wine</span><span className="primary-color">Catalog</span> </Link>
   
                   </div>
                   <div >
@@ -22,7 +22,7 @@
                           <ul className="nav">
                               <li><Link className="hack" activeStyle={activeStyle} to="/">Home</Link></li>
                               <li><Link to="/about/" activeStyle={activeStyle} className="hack">About</Link></li>
-                              <li><Link to="/blog/" activeStyle={activeStyle} className="hack">Blog</Link></li>
+                              <li><Link to="/blog/" activeStyle={activeStyle} className="hack">Catalog</Link></li>
                               <li><Link to="/contact/" activeStyle={activeStyle} className="hack">Contact</Link></li>
                            
   
